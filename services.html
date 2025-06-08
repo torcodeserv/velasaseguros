@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Velasa Seguros</title>
+    <meta name="description" content="Descubre nuestros servicios profesionales de alta calidad">
+    <meta name="keywords" content="servicios, consultoría, desarrollo, soporte técnico">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --secondary-color: #6c757d;
+            --success-color: #198754;
+            --danger-color: #dc3545;
+            --warning-color: #ffc107;
+            --info-color: #0dcaf0;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --green-color: #366565;
+        }
+        
+        body {
+            padding-top: 70px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .navbar {
+            background: linear-gradient(190deg, var(--success-color), var(--info-color));
+            color: white;
+            border-radius: 0;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, var(--success-color), var(--primary-color));
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .footer {
+            background-color: var(--green-color);
+            color: white;
+            padding: 40px 0 20px 0;
+        }
+        
+        .visit-counter {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-building"></i> Velasa Seguros
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Acerca de</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado de Página -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <h2 class="display-5 fw-bold mb-4">Nuestros Servicios</h2>
+                    <p class="lead">
+                        Ofrecemos soluciones integrales y personalizadas pensado en tu bienestar 
+                        económico empresarial y familiar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div class="container my-5">
+        <div class="row mb-5">
+            <div class="col-lg-10 mx-auto">
+                <div class="card service-card shadow">
+                    <img src="https://via.placeholder.com/800x400/198754/ffffff?text=Servicios+Profesionales" 
+                         class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title text-success">
+                            <i class="bi bi-gear-fill"></i> Seguro de Proteccion Persona Clave GNP
+                        </h2>
+                        <p class="card-text lead mb-4">
+                            Único instrumento que permite a las empresas <strong>Personas Morales PROTEGER A SUS PERSONAS CLAVE</strong>, 
+                            en Plataforma de Seguros con los beneficios de:
+                        </p>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> <strong>Blindaje Empresarial</strong></li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> <strong>Reducción de Impuestos</strong></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> <strong>Rendimiento en sus Aportaciones</strong></li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> <strong>Retorno de Capital</strong></li>
+                                </ul>
+                            </div>
+                            <br>
+                            <h3 class="text-center">100% deducible sustentado en la LEY del ISR</h3>
+                            <p>Art. 18, Fracc. VII y art. 27, Fracc. XII de la LISR | Art. 51 del RLISR. Primas pagadas son deducibles de Impuestos
+                                Art 27 Fracc XII
+                            </p>
+                        </div>
+                        
+                        <div class="mt-4 bg bg-success text-white rounded p-2" >
+                            <h2>COBERTURAS AMPARADAS:</h2>
+                            <p class="">
+                                Ahorro por Supervivencia, Fallecimiento e Invalidez Total y Permanente con los montos especificados  
+                                para cada participante en la tabla adjunta:
+                            </p>
+
+                            <h3>Ejemplo: Plazo 10 años,  Moneda Nacional</h3>
+
+                            <table class="table table-bordered text-center">
+                                <thead>
+                                    <tr class="table-warning">
+                                        <th>Persona Clave</th>
+                                        <th>Edad</th>
+                                        <th>Suma Asegurada(Fallecimiento, Invalidez, Supervivencia)</th>
+                                        <th>Aportacion Anual</th>
+                                        <th>Aportacion Total</th>
+                                        <th>Incentivo Fiscal</th>
+                                        <th>Inversión Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-danger">
+                                        <td>Hombre/Mujer</td>
+                                        <td>40</td>
+                                        <td>$35,000,,000.00</td>
+                                        <td>$3,422,000.00</td>
+                                        <td>$34.220,000.00</td>
+                                        <td>$13,688,000.00</td>
+                                        <td>$20,532,000.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Los beneficios se traducen en:</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 
+                                        <strong>Soporte financiero en caso de ausencia de la Persona Clave.</strong></li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 
+                                        <strong>Disminución de pago por impuestos.</strong></li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 
+                                        <strong>Disminucion del coeficiente de utilidad.</strong></li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 
+                                        <strong>Disminuye la base gravable para invertir en el pago de la prima.</strong></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 
+                                        <strong>Gasto directo sin IVA</strong></li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 
+                                        <strong>El importe de las primas es 100% deducible para efectos Fiscales</strong></li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 
+                                        <strong>Puede diferir el PAGO (pagos fraccionados aplica recargos: 
+                                            Trimestral (6.30%), Semestral (4%).</strong></li>
+                                </ul>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-10 mx-auto">
+                <br>
+                <hr>
+                <h3 class="text-center"> <strong>Preguntas Frecuentes</strong></h3>
+                <h4>1. ¿Que sucede si la empresa no tiene la posibilidad de seguir cubriendo las primas?</h4>
+                <p>Dependiendo del numero de años cubiertos, la empresa recupera el monto señalado en la Tabla de Valores 
+                    Garantizados o puede Prorrogar la Protección.</p>
+                <h4>2. ¿Que sucede si la persona Clave se Invalida?</h4>
+                <p>Gnp, pagara el monto del Beneficio contratado y de acuerdo a las anualidades pagadas, la empresa tendrá 
+                    derecho a recuperar los Valores Garantizados.</p>
+                <h4>3. ¿Si no sucede nada, es decir la persona Clave llega con vida al final del contrato, cómo  entrega Gnp la Dote a la empresa?</h4>
+                <p>Gnp, entregara el monto total de la Dote y la empresa acumulara a sus ingresos,  (se sugiere preparar una estrategia Fiscal de 
+                    acuerdo al Giro del Negocio y a las Leyes vigentes al momento de recibir la Dote).</p>
+            </div>
+        </div>
+
+        
+
+        <!-- Servicios Destacados -->
+        <div class="row">
+            <h3 class="text-center"> <strong>Al final del Plazo El Empresario  tiene el PODER de DECIDIR las ESTRATEGIAS 
+                a REALIZAR en SU EMPRESA</strong></h3>
+            <div class="col-lg-4 mb-4">
+                <div class="card service-card shadow h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><strong>Retención y adquisición de talento</strong></h5>
+                        <p class="card-text">
+                            Dispondrá de los recursos necesarios para la adquisición de 
+                            el talento humano mas valioso para su empresa .
+                        </p>
+                        <img src="https://softland.com/co/wp-content/uploads/sites/15/2025/02/ARTICULO3-1024x576.webp" 
+                        alt="" style="height: 200px; width: 300px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card service-card shadow h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><strong>Expansión, Remodelación de la empresa</strong></h5>
+                        <p class="card-text">
+                            Sus planes de crecimiento o modernizacion sin que tenga que 
+                            contratar deuda o comprometer parte del capital de su EMPRESA.
+                        </p>
+                        <img src="https://www.camerdata.es/blog/wp-content/uploads/lanzar-un-nuevo-producto-i-3.jpg" 
+                        alt="" style="height: 200px; width: 300px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card service-card shadow h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><strong>Sucesión</strong></h5>
+                        <p class="card-text">
+                            Transfiera en control de forma planificada garantizando la continuidad del
+                            negocio, minimizando riesgos y preservando el legado, los valores y la estabilidad operativa 
+                            de su EMPRESA.
+                        </p>
+                        <img src="https://en.camaradesevilla.com/wp-content/uploads/sites/2/2023/07/sucesion-empresas.jpg" 
+                        alt="" style="height: 200px; width: 300px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card service-card shadow h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><strong>Ausencia involuntaria de Socios</strong></h5>
+                        <p class="card-text">
+                            Ante cualquier eventualidad o circunstancia inusual, dispone de recursos para hacer frente a un hecho no previsto.
+                        </p>
+                        <img src="https://asdedis.org/wp-content/uploads/2016/06/prestacion-incapacidad.jpg" 
+                        alt="" style="height: 200px; width: 300px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card service-card shadow h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><strong>Renovación de Activos</strong></h5>
+                        <p class="card-text">
+                            Recursos disponibles para renovar los activos sin afectar el 
+                            flujo financiero de su EMPRESA.
+                        </p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrFrMqLv8b-PGnA5J97L7Pok4tFLD_kg7Sgg&s" 
+                        alt="" style="height: 200px; width: 300px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card service-card shadow h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><strong>Jubilación de Socios</strong></h5>
+                        <p class="card-text">
+                            Asegure el retiro de los socios que se encuentren en edad jubilación
+                            sin poner en riesgo su capital y la continuidad de la EMPRESA.
+                        </p>
+                        <img src="https://tvazteca.brightspotcdn.com/dims4/default/a295a10/2147483647/strip/true/crop/1280x728+0+0/resize/968x551!/format/webp/quality/90/?url=http%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F21%2F5d%2F7c3e2aff4bc8a304169a33767ce9%2Fjubilacion.jpg" 
+                        alt="" style="height: 200px; width: 300px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5><i class="bi bi-building"></i> Velasa Seguros</h5>
+                    <p>Brindando soluciones de alta calidad.</p>
+                    <p><strong>Dirección:</strong> Av. Principal 123, Ciudad, País</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5><i class="bi bi-telephone"></i> Contacto</h5>
+                    <p><strong>Teléfono:</strong> +1 (555) 123-4567</p>
+                    <p><strong>Email:</strong> info@velasa.com.mx</p>
+                    <p><strong>Horario:</strong> Lun-Vie 9:00 a 16:00 horas</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5><i class="bi bi-share"></i> Síguenos</h5>
+                    <div class="d-flex gap-3 mb-3">
+                        <a href="#" class="text-light"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-linkedin fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-instagram fs-4"></i></a>
+                    </div>
+                    <div class="visit-counter">
+                        <i class="bi bi-eye"></i> Visitas: <span id="visitCounter">0</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-light">
+            <div class="text-center">
+                <p>&copy; 2025 Velasa Seguros. Todos los derechos reservados. <span id="year"></span> - <span id="copyright"></span> | <span id="poweredBy"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Contador de Visitas -->
+    <script>
+        function updateVisitCounter() {
+            let visits = localStorage.getItem('visitCount');
+            if (!visits) {
+                visits = 0;
+            }
+            document.getElementById('visitCounter').textContent = visits;
+        }
+        
+        window.addEventListener('load', updateVisitCounter);
+    </script>
+</body>
+</html>
